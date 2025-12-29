@@ -1,7 +1,8 @@
 # md-helper.nvim
 
 ![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)
-![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white) 
+
 
 An ultra-lightweight Lua module for power-users who live in Markdown. Streamline your writing workflow in Neovim with intelligent helpers for tables, content structure, and assets.
 

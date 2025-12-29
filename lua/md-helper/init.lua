@@ -24,7 +24,7 @@ M.generate_toc = function()
             -- Ignore the TOC header itself if it already exists
             if title ~= "Table of Contents" then
                 -- Strip markdown links from title: [Name](URL) -> Name
-                local clean_title = title:gsub("%[([^%]]+)%]%b()", "%1")
+                local clean_title = title:gsub("%[([^%]]+)%]%s*%b()", "%1")
                 
                 -- Convert clean title to a slug (e.g., "My Heading" -> "my-heading")
                 local slug = clean_title:lower():gsub("%s+", "-"):gsub("[^%w%-]", "")
