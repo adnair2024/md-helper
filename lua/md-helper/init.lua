@@ -23,11 +23,15 @@ M.generate_toc = function()
             local depth = #level
             -- Ignore the TOC header itself if it already exists
             if title ~= "Table of Contents" then
-                -- Convert title to a slug (e.g., "My Heading" -> "my-heading")
-                local slug = title:lower():gsub("%s+", "-"):gsub("[^%w%-]", "")
+                -- Strip markdown links from title: [Name](URL) -> Name
+                local clean_title = title:gsub("%[([^%]]+)%]%b()", "%1")
+                
+                -- Convert clean title to a slug (e.g., "My Heading" -> "my-heading")
+                local slug = clean_title:lower():gsub("%s+", "-"):gsub("[^%w%-]", "")
+                
                 -- Indent based on heading level (2 spaces per level)
                 local indent = string.rep("  ", depth - 1)
-                table.insert(toc, string.format("%s* [%s](#%s)", indent, title, slug))
+                table.insert(toc, string.format("%s* [%s](#%s)", indent, clean_title, slug))
             end
         end
     end
