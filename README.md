@@ -1,8 +1,22 @@
 # md-helper.nvim
 
 ![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)
-![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white) 
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
 
+## Table of Contents
+
+* [md-helper.nvim](#md-helpernvim)
+  * [Features](#features)
+  * [Dependencies](#dependencies)
+  * [Installation](#installation)
+    * [[Lazy.nvim](https://github.com/folke/lazy.nvim)](#lazynvimhttpsgithubcomfolkelazynvim)
+    * [[Which-Key.nvim](https://github.com/folke/which-key.nvim) Integration](#which-keynvimhttpsgithubcomfolkewhich-keynvim-integration)
+  * [Usage Guide](#usage-guide)
+    * [Table of Contents (`<leader>mc`)](#table-of-contents-leadermc)
+    * [Creating Tables (`<leader>mt`)](#creating-tables-leadermt)
+    * [Inserting Links (`<leader>ml`)](#inserting-links-leaderml)
+    * [Inserting Images (`<leader>mi`)](#inserting-images-leadermi)
+  * [Contributing](#contributing)
 
 An ultra-lightweight Lua module for power-users who live in Markdown. Streamline your writing workflow in Neovim with intelligent helpers for tables, content structure, and assets.
 
